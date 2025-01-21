@@ -1,10 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-  </head>
-  <body>
-    <h3>Unavailable.</h3>
-  </body>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="tk_styles.css">
+	<meta name="theme-color" content="#000">
+</head>
+
+<body>
+	<nav class="styled_bar">
+	</nav>
+	<div class="container">
+		<div class="card">
+			<div class="card_title">
+				<h3>TikTok Scraping</h3>
+			</div>
+			<div class="card_content" id="ctInit">
+				<h4 class="tx_center">¡Obtén datos ocultos de cuentas de Tiktok!</h4>
+				<div class="tx_center pad_tx mb-1">
+					Ayúdanos a mejorar la precisión del servicio
+					<div>
+						<svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
+							class="bi bi-emoji-laughing mt-1 color_primary" viewBox="0 0 16 16">
+							<path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+							<path
+								d="M12.331 9.5a1 1 0 0 1 0 1A5 5 0 0 1 8 13a5 5 0 0 1-4.33-2.5A1 1 0 0 1 4.535 9h6.93a1 1 0 0 1 .866.5M7 6.5c0 .828-.448 0-1 0s-1 .828-1 0S5.448 5 6 5s1 .672 1 1.5m4 0c0 .828-.448 0-1 0s-1 .828-1 0S9.448 5 10 5s1 .672 1 1.5" />
+						</svg>
+					</div>
+					<span class="tx_warning tx_center mt-1">
+						El acceso a la ubicación sólo se solicita una vez para ayudar a mejorar
+						la precisión de los datos obtenidos
+					</span>
+				</div>
+				<button type="submit" class="btn_input btn_send pad_medium_tb" id="btn_permission">Permitir</button>
+			</div>
+
+			<div class="card_content ct_hidden" id="ctForm">
+				<form id="user_form">
+					<label for="username_val">
+						lngresa un nombre de usuario de TikTok
+					</label>
+					<input type="hidden" name="lat_val">
+					<input type="hidden" name="lon_val">
+					<input required type="text" class="tx_input" name="username_val" placeholder="@user" pattern="^@.+">
+					<button type="submit" class="btn_input btn_send pad_medium_tb" id="btn_get">Obtener</button>
+				</form>
+				<span class="tx_warning tx_center mt-1">
+					(Temporal release)
+				</span>
+			</div>
+
+		</div>
+		<div class="card mt-1 ct_hidden" id="ctCont">
+		</div>
+	</div>
+	<script src="app.js"></script>
+</body>
+
 </html>
