@@ -13,20 +13,6 @@
 	box-sizing: border-box;
 }
 
-@font-face {
-	font-family: 'TkRegular';
-	src: url('https://github.com/tkbanw/tkbanw.github.io/raw/refs/heads/main/fonts/TikTokDisplay-Regular.ttf') format('truetype');
-	font-style: normal;
-	font-weight: normal;
-}
-
-@font-face {
-	font-family: 'TkBold';
-	src: url('fonts/TiktokDisplay-Bold.ttf') format('truetype');
-	font-style: normal;
-	font-weight: normal;
-}
-
 body {
 	margin: 0 auto;
 	font-family: 'TkBold', sans-serif;
@@ -133,7 +119,7 @@ input {
 	padding: 10px;
 	border: 2px var(--sel-color-b) solid;
 	border-radius: 10px;
-	font-family: 'TkRegular';
+	font-family: 'TkRegular', sans-serif;
 	font-size: inherit;
 }
 
