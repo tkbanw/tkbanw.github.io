@@ -1,3 +1,5 @@
+@import url('https://fonts.cdnfonts.com/css/tiktok-text-display');   
+
 :root {
 	--main-bg-color: #000;
 	--primary-color: #ff0050;
@@ -15,7 +17,7 @@
 
 body {
 	margin: 0 auto;
-	font-family: 'TkBold', sans-serif;
+	font-family: 'TikTok Display', sans-serif;
 	background-color: var(--sel-color);
 	font-size: 1.1em;
 	letter-spacing: 0.5px;
@@ -119,7 +121,7 @@ input {
 	padding: 10px;
 	border: 2px var(--sel-color-b) solid;
 	border-radius: 10px;
-	font-family: 'TkRegular', sans-serif;
+	font-family: 'TikTok Display', sans-serif;
 	font-size: inherit;
 }
 
